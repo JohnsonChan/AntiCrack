@@ -1,0 +1,14 @@
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-ignorewarnings
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*,!method/removal/*
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+-obfuscationdictionary ./mapping_dictionary.txt
+-classobfuscationdictionary ./mapping_dictionary.txt
+-packageobfuscationdictionary ./mapping_dictionary.txt
+-printmapping ./mapping.txt
